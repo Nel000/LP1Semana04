@@ -2,8 +2,18 @@
 
 namespace Fibonacci
 {
+    /// <summary>
+    /// This program reveals a number from the Fibonacci sequence, in the
+    /// position requested by the user.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Requests a number from the user, and uses it as an index to find
+        /// the corresponding number in the Fibonacci sequence, through the 
+        /// Fibonacci method.
+        /// </summary>
+        /// <param name="args">Arguments given through the console</param>
         static void Main(string[] args)
         {
             // Stores the user input
