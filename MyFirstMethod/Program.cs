@@ -45,5 +45,21 @@ namespace MyFirstMethod
                 Console.WriteLine(i);
             }
         }
+
+        /// <summary>
+        /// Print one number per line, starting from first given number,
+        /// until second given number.
+        /// </summary>
+        /// <param name="n1">The given number to count from</param>
+        /// <param name="n2">The given number to count towards</param>
+        private static void CountToN(int n1, int n2)
+        {
+            // Loop until 'i' is equal to second given number
+            for (int i = n1; i < n2; i++)
+            {
+                // Print one number per line
+                Console.WriteLine(i);
+            }
+        }
     }
 }
