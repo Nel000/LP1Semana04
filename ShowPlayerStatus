@@ -1,0 +1,7 @@
+private static void ShowPlayerStatus()
+{
+    if (livesLeft > 0)
+        Console.WriteLine("Player is alive and well!");
+    else
+        return;
+}
