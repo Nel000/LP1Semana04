@@ -3,8 +3,8 @@
 namespace MyFirstMethod
 {
     /// <summary>
-    /// This class contains 2 methods that print one number per line, 
-    /// and invokes them both twice.
+    /// This class contains 3 methods that print one number per line, 
+    /// and invokes them each twice.
     /// </summary>
     class Program
     {
@@ -21,6 +21,10 @@ namespace MyFirstMethod
             // Invoke CountToN method with 2 different values
             CountToN(5);
             CountToN(7);
+
+            // Invoke CountToN method with 2 arguments, with different values
+            CountToN(5, 7);
+            CountToN(1, 10);
         }
 
         /// <summary>
@@ -47,15 +51,15 @@ namespace MyFirstMethod
         }
 
         /// <summary>
-        /// Print one number per line, starting from first given number,
-        /// until second given number.
+        /// Print one number per line in order, between first and second
+        /// given numbers.
         /// </summary>
-        /// <param name="n1">The given number to count from</param>
-        /// <param name="n2">The given number to count towards</param>
+        /// <param name="n1">The number that defines the lowest limit</param>
+        /// <param name="n2">The number that defines the highest limit</param>
         private static void CountToN(int n1, int n2)
         {
-            // Loop until 'i' is equal to second given number
-            for (int i = n1; i < n2; i++)
+            // Loop until 'i' is equal to last number before second given number
+            for (int i = n1 + 1; i < n2; i++)
             {
                 // Print one number per line
                 Console.WriteLine(i);
