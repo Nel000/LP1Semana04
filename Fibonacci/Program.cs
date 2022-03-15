@@ -6,8 +6,25 @@ namespace Fibonacci
     {
         static void Main(string[] args)
         {
-            int fib = Fibonacci(8);
-            Console.WriteLine(fib);
+            // Stores the user input
+            int n;
+
+            // Stores a number from the Fibonacci sequence
+            int fib;
+
+            // Requests user input
+            Console.WriteLine("Look for a number in the Fibonacci sequence");
+            Console.Write("Number position: ");
+
+            // Store user input in variable
+            n = Convert.ToInt32(Console.ReadLine());
+
+            // Execute Fibonacci method with user input
+            fib = Fibonacci(n);
+
+            // Reveal number in requested position
+            Console.WriteLine(
+                $"Number in position {n} of the Fibonacci sequence: {fib}");
         }
 
         /// <summary>
