@@ -22,12 +22,20 @@ namespace Fibonacci
             // Stores a number from the Fibonacci sequence
             int fib;
 
-            // Requests user input
-            Console.WriteLine("Look for a number in the Fibonacci sequence");
-            Console.Write("Number position: ");
+            if (args.Length == 0)
+            {
+                // Requests user input
+                Console.WriteLine("Look for a number in the Fibonacci sequence");
+                Console.Write("Number position: ");
 
-            // Store user input in variable
-            n = Convert.ToInt32(Console.ReadLine());
+                // Store user input in variable
+                n = Convert.ToInt32(Console.ReadLine());
+            }
+            else
+            {
+                // Store command line value in variable
+                n = Convert.ToInt32(args[0]);
+            }
 
             // Execute Fibonacci method with user input
             fib = Fibonacci(n);
